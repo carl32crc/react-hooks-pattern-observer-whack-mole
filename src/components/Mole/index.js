@@ -1,12 +1,9 @@
 import React, { useEffect } from 'react';
 import { scoreController } from './../../controllers/ScoreController';
 import { gameController } from './../../controllers/GameController';
+import { randomIntFromInterval } from './../../utils/randomIntFromInterval';
 
 import './styles.css';
-
-const randomIntFromInterval = (min, max) => { // min and max included 
-  return Math.floor(Math.random() * (max - min + 1) + min);
-}
 
 export const Mole = ({mole}) => {
   

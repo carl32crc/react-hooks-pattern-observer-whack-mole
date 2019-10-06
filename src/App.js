@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import { ScoreBoard } from './components/Scoreboard';
 import { gameController } from './controllers/GameController';
+import { randomIntFromInterval } from './utils/randomIntFromInterval';
 
 import { Hole } from './components/Hole';
 import { STATE } from './models/state';
@@ -37,9 +38,10 @@ function App() {
 
   useEffect(() => {
     if(state === STATE.IN_GAME) {
+      const randomTimer = randomIntFromInterval(400, 1200);
       const interval = setInterval(() => {
         gameController.showRandomMole();
-      }, 400);
+      }, randomTimer);
       return () => clearInterval(interval);
     }
   }, [state]);
