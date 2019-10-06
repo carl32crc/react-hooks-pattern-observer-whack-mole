@@ -2,8 +2,7 @@ import React, { useEffect } from 'react';
 import { scoreController } from './../../controllers/ScoreController';
 import { gameController } from './../../controllers/GameController';
 import { randomIntFromInterval } from './../../utils/randomIntFromInterval';
-
-import './styles.css';
+import { Logo } from './../Logo'
 
 export const Mole = ({mole}) => {
   
@@ -19,14 +18,12 @@ export const Mole = ({mole}) => {
   
   return(
   mole.live > 0 && mole.isVisible &&
-    <div 
-      className='Mole'
-      style={{ backgroundColor: mole.type === 'golden' && 'yellow' }} 
+    <Logo 
       onClick={() => {
         scoreController.updateScore(mole);
         gameController.kickedMole(mole);
       }}
-    >
-  </div>
-)
+      mole={mole}
+    />
+  )
 };
