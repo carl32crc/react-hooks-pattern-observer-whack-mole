@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { scoreController } from '../../controllers/ScoreController';
 
-function ScoreBoard() {
+export function ScoreBoard() {
 
   const [ score , setScore ] = useState(scoreController.score);
 
@@ -25,5 +25,3 @@ function ScoreBoard() {
     </div>
   );
 };
-
-export default ScoreBoard;
