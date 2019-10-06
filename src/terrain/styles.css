@@ -1,0 +1,5 @@
+.Terrain {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 675px;
+}

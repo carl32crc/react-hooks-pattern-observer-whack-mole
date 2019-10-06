@@ -1,0 +1,17 @@
+
+.Hole {
+  width: 200px;
+  height: 200px;
+  
+  overflow: hidden;
+  position: relative;
+
+  background-color: black;
+
+  border: solid;
+  border-width: 11px;
+  border-color: darkgray;
+  border-radius: 20%;
+
+
+}

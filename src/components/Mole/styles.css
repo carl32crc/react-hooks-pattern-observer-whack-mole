@@ -1,0 +1,17 @@
+
+.Mole {
+  width: 80px;
+  height: 250px;
+  display: block;
+  position: absolute;
+
+  left: 62px;
+  top: 95px;
+
+  background-color: aqua;
+}
+
+
+/* .Mole.Peep {
+  top: 95px;
+} */
