@@ -88,6 +88,15 @@ function App() {
     }
   }, [state]);
 
+  useEffect(() => {
+    if(state === STATE.IN_GAME) {
+      const interval = setInterval(() => {
+        gameController.showRandomMole();
+      }, 400);
+      return () => clearInterval(interval);
+    }
+  }, [state]);
+
   // const _gameInit = () => {
   //   const _game = GameCore.createNewGame();
   //   GameCore.initializeGame({ game: _game, holes: 6 });

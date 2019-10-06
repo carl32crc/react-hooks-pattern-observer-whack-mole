@@ -4,8 +4,7 @@ export class Mole extends GenerateUUID {
 
   constructor() {
     super()
-    this.isMoving = false;
-    this.isOut = false;
+    this.isVisible = false;
     this.live = LIVE.MOLE;
     this.name =`Mole ${this.id}`;
     this.peepOutMax = 1200;

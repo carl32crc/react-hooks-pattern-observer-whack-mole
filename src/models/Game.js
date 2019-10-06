@@ -4,16 +4,19 @@ import { GoldenMole , Mole, LIVE } from './Mole';
 import { STATE } from './state';
 import { MESSAGE } from './message';
 
+const randomSquareNumber = (CUSTOM_HOLES_NUMBER, HOLES_NUMBER) => Math.floor(Math.random() * (CUSTOM_HOLES_NUMBER || HOLES_NUMBER));
 
 export class Game {
   state = '';
   board = [];
   messageEndGame = '';
   HOLES_NUMBER = 6;
+  CUSTOM_HOLES_NUMBER = null;
 
-  constructor(CUSTOM_HOLES_NUMBER) {
+  constructor(CUSTOM_HOLES_NUMBER = null) {
     this.state = STATE.START;
-    this._setBoard(CUSTOM_HOLES_NUMBER);
+    this.CUSTOM_HOLES_NUMBER = CUSTOM_HOLES_NUMBER;
+    this._setBoard();
   }
 
   setState(state) {
@@ -24,10 +27,21 @@ export class Game {
     this.messageEndGame = message;
   }
 
-  _setBoard(CUSTOM_HOLES_NUMBER) {
-    const randomNumber = Math.floor(Math.random() * (CUSTOM_HOLES_NUMBER || this.HOLES_NUMBER));
-    this.board = Array(CUSTOM_HOLES_NUMBER || this.HOLES_NUMBER).fill('')
+  _setBoard() {
+    const randomNumber = randomSquareNumber(this.CUSTOM_HOLES_NUMBER, this.HOLES_NUMBER);
+    this.board = Array(this.CUSTOM_HOLES_NUMBER || this.HOLES_NUMBER).fill('')
       .map((_, index) => ({ ...new Hole(GoldenMole, Mole, randomNumber, index)}))
+  }
+
+  showRandomMole() {
+    const randomNumber = randomSquareNumber(this.CUSTOM_HOLES_NUMBER, this.HOLES_NUMBER);
+    this.board[randomNumber].mole.isVisible = true;
+  }
+
+  hideMole(moleToHide) {
+    this.board =  this.board = this.board.map(({ id, mole }) => {
+      return { id, mole: { ...mole.id === moleToHide.id ? {...mole, isVisible: false } : mole  } }
+    })
   }
 
   kickedMole(moleKicked, scoreController) {
@@ -56,9 +70,9 @@ export class Game {
     }
   }
 
-  restartGame(scoreController, CUSTOM_HOLES_NUMBER) {
+  restartGame(scoreController) {
     scoreController.restartScore();
-    this._setBoard(CUSTOM_HOLES_NUMBER);
+    this._setBoard();
   }
 
   randomReorderMoles() {

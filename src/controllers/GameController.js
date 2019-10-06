@@ -21,6 +21,16 @@ class GameController extends Subject {
     this.publish(this);
   }
 
+  showRandomMole() {
+    this.game.showRandomMole();
+    this.publish(this);
+  }
+
+  hideMole(mole) {
+    this.game.hideMole(mole);
+    this.publish(this);
+  }
+
   reorderMoles() {
     this.game.randomReorderMoles();
     this.publish(this);
