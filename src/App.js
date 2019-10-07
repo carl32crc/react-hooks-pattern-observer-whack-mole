@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { ScoreBoard } from './components/scoreboard';
+import { ScoreBoard } from './components/Scoreboard';
 import { gameController } from './controllers/GameController';
 import { randomIntFromInterval } from './utils/randomIntFromInterval';
 
