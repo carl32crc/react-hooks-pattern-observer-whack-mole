@@ -39,7 +39,7 @@ export class Game {
   }
 
   hideMole(moleToHide) {
-    this.board =  this.board = this.board.map(({ id, mole }) => {
+    this.board = this.board.map(({ id, mole }) => {
       return { id, mole: { ...mole.id === moleToHide.id ? {...mole, isVisible: false } : mole  } }
     })
   }
