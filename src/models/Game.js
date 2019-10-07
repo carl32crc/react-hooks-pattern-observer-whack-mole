@@ -56,7 +56,7 @@ export class Game {
 
   checkPlayerLose(scoreController) {
     let hitsNeededToKillAllMoles = ((this.board.length - 1) * LIVE.MOLE) + LIVE.GOLDEN_MOLE;
-    if(scoreController.score.hits === hitsNeededToKillAllMoles * 2) {
+    if(scoreController.score.shots === hitsNeededToKillAllMoles * 2) {
       this.setMessage(MESSAGE.LOSER);
       this.setState(STATE.FINAL);
     }
