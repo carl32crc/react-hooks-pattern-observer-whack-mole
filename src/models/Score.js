@@ -19,6 +19,6 @@ export class Score {
   }
 
   failShot() {
-    this.hits++;
+    this.shots++;
   }
 }
