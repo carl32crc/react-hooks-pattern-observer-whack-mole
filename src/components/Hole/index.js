@@ -11,7 +11,7 @@ export const Hole = ({ mole }) => (
     onClick={(event) => {
       if( event.target.className === 'Hole') {
         scoreController.failShot();
-        gameController.kickedMole();
+        gameController.continueInGame();
       } 
     }}>
     <Mole mole={mole}/>

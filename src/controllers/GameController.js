@@ -14,6 +14,11 @@ class GameController extends Subject {
     this.publish(this);
   }
 
+  continueInGame() {
+    this.game.continueInGame(scoreController);
+    this.publish(this);
+  }
+
   kickedMole(mole) {
     this.game.kickedMole(mole, scoreController);
     this.publish(this);

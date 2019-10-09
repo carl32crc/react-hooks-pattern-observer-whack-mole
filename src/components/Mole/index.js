@@ -22,6 +22,7 @@ export const Mole = ({mole}) => {
       onClick={() => {
         scoreController.updateScore(mole);
         gameController.kickedMole(mole);
+        gameController.continueInGame();
       }}
       mole={mole}
     />

@@ -44,17 +44,18 @@ export class Game {
     })
   }
 
-  kickedMole(moleKicked, scoreController) {
-    if(moleKicked) {
-      this.board = this.board.map(({ id, mole }) => {
-        return { id, mole: { ...mole.id === moleKicked.id ? {...mole, live: mole.live - 1 } : mole  } }
-      })
-    }
-    this.checkPlayerLose(scoreController);
-    this.checkPlayerWin();
+  kickedMole(moleKicked) {
+    this.board = this.board.map(({ id, mole }) => {
+      return { id, mole: { ...mole.id === moleKicked.id ? {...mole, live: mole.live - 1 } : mole  } }
+    })
   }
 
-  checkPlayerLose(scoreController) {
+  continueInGame(scoreController) {
+    this._checkPlayerLose(scoreController);
+    this._checkPlayerWin();
+  }
+
+  _checkPlayerLose(scoreController) {
     let hitsNeededToKillAllMoles = ((this.board.length - 1) * LIVE.MOLE) + LIVE.GOLDEN_MOLE;
     if(scoreController.score.shots === hitsNeededToKillAllMoles * 2) {
       this.setMessage(MESSAGE.LOSER);
@@ -62,7 +63,7 @@ export class Game {
     }
   }
 
-  checkPlayerWin() {
+  _checkPlayerWin() {
     const molesAlife = this.board.filter(({ mole }) => mole.live > 0);
     if(molesAlife.length === 0) {
       this.setMessage(MESSAGE.WINNER);
