@@ -4,7 +4,7 @@ import { GoldenMole , Mole, LIVE } from './Mole';
 import { STATE } from './state';
 import { MESSAGE } from './message';
 
-const randomSquareNumber = (CUSTOM_HOLES_NUMBER, HOLES_NUMBER) => Math.floor(Math.random() * (CUSTOM_HOLES_NUMBER || HOLES_NUMBER));
+const generateRandomNumber = (CUSTOM_HOLES_NUMBER, HOLES_NUMBER) => Math.floor(Math.random() * (CUSTOM_HOLES_NUMBER || HOLES_NUMBER));
 
 export class Game {
   state = '';
@@ -28,13 +28,13 @@ export class Game {
   }
 
   _setBoard() {
-    const randomNumber = randomSquareNumber(this.CUSTOM_HOLES_NUMBER, this.HOLES_NUMBER);
+    const randomNumber = generateRandomNumber(this.CUSTOM_HOLES_NUMBER, this.HOLES_NUMBER);
     this.board = Array(this.CUSTOM_HOLES_NUMBER || this.HOLES_NUMBER).fill('')
       .map((_, index) => ({ ...new Hole(GoldenMole, Mole, randomNumber, index)}))
   }
 
   showRandomMole() {
-    const randomNumber = randomSquareNumber(this.CUSTOM_HOLES_NUMBER, this.HOLES_NUMBER);
+    const randomNumber = generateRandomNumber(this.CUSTOM_HOLES_NUMBER, this.HOLES_NUMBER);
     this.board[randomNumber].mole.isVisible = true;
   }
 
@@ -76,20 +76,20 @@ export class Game {
   }
 
   randomReorderMoles() {
-    this.board = this.shuffleMolesInHoles();
+    this.board = this._shuffleMolesInHoles();
   }
 
-  shuffleMolesInHoles() {
+  _shuffleMolesInHoles() {
     const copy = this.board.map((element) => element);
-    const randomValue = shuffle(copy);
+    const random = shuffle(copy);
     
-    const arrayReorder = this.board.map(element => {
-      const value = randomValue.next().value;
+    const molesReorder = this.board.map(element => {
+      const value = random.next().value;
       return {
         ...element,
         mole: value.mole
       }
     }) 
-    return arrayReorder;
+    return molesReorder;
   }
 }
