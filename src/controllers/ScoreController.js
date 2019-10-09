@@ -2,8 +2,6 @@ import { Score } from './../models/Score';
 import { Subject } from './../subject'
 
 class ScoreController extends Subject {
-
-  score = null
   
   constructor(Score) {
     super()

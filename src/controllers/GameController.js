@@ -3,8 +3,6 @@ import { scoreController } from './ScoreController';
 import { Subject } from './../subject';
 
 class GameController extends Subject {
-  
-  game = null;
 
   constructor(Game) {
     super()
