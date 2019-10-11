@@ -1,30 +1,30 @@
 import { Score } from './../models/Score';
 import { Subject } from './../subject'
 
-class ScoreController extends Subject {
+class ScoreController {
   
-  constructor(Score) {
-    super()
-    this.score = new Score();
+  constructor(Score, Subject) {
+    this.score = Score;
+    this.subject = Subject;
   }
 
   restartScore() {
     this.score.initScore();
-    this.publish(this);
+    this.subject.publish(this);
   }
 
   failShot() {
     this.score.failShot();
-    this.publish(this);
+    this.subject.publish(this);
   }
 
   updateScore(mole) {
     this.score.incrementScore(mole);
-    this.publish(this)
+    this.subject.publish(this)
   }
 }
 
-const scoreController = new ScoreController(Score);
+const scoreController = new ScoreController(new Score(), new Subject());
 
 export {
   scoreController

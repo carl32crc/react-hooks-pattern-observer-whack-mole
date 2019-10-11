@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { scoreController } from '../../controllers/ScoreController';
 
+const { subject } = scoreController;
+
 export function ScoreBoard() {
 
   const [ score , setScore ] = useState(scoreController.score);
@@ -11,9 +13,9 @@ export function ScoreBoard() {
   }
 
   useEffect(() => {
-    scoreController.attach(onScoreUpdated);
+    subject.attach(onScoreUpdated);
 
-    return () => scoreController.detach(onScoreUpdated);
+    return () => subject.detach(onScoreUpdated);
   },[])
 
   return (

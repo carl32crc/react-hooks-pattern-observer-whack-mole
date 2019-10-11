@@ -9,6 +9,8 @@ import { STATE } from './models/state';
 
 import './App.css';
 
+const { subject } = gameController;
+
 function App() {
   const [board, setBoard] = useState(gameController.game.board);
   const [state, setState] = useState(gameController.game.state);
@@ -22,9 +24,9 @@ function App() {
   }
 
   useEffect(() => {
-    gameController.attach(onBoardUpdated);
+    subject.attach(onBoardUpdated);
 
-    return () => gameController.detach(onBoardUpdated);
+    return () => subject.detach(onBoardUpdated);
   },[])
 
   useEffect(() => {
