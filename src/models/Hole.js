@@ -1,9 +1,9 @@
 import { GenerateUUID } from './GenerateUUID';
 
 
-export class Hole extends GenerateUUID {
+export class Hole {
   constructor(GoldenMole, Mole, index, randomNumber) {
-    super()
+    this.id = new GenerateUUID().id
     this.mole = index === randomNumber ? new GoldenMole() : new Mole();
   }
 }

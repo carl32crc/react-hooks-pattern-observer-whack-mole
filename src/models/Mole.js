@@ -1,9 +1,9 @@
 import { GenerateUUID } from './GenerateUUID';
 
-export class Mole extends GenerateUUID {
+export class Mole {
 
   constructor() {
-    super()
+    this.id = new GenerateUUID().id;
     this.isVisible = false;
     this.live = LIVE.MOLE;
     this.name =`Mole ${this.id}`;
@@ -11,6 +11,16 @@ export class Mole extends GenerateUUID {
     this.peepOutMin = 200;
     this.points = 10;
     this.type = 'normal';
+    this.hide = this.hide;
+    this.decrementLive = this.decrementLive;
+  }
+
+  hide() {
+    this.isVisible = false;
+  }
+
+  decrementLive() {
+    this.live--;
   }
 }
 
