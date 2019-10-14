@@ -29,24 +29,24 @@ function App() {
     return () => subject.detach(onBoardUpdated);
   },[])
 
-  // useEffect(() => {
-  //   if(state === STATE.IN_GAME) {
-  //     const interval = setInterval(() => {
-  //       gameController.reorderMoles();
-  //     }, 1000);
-  //     return () => clearInterval(interval);
-  //   }
-  // }, [state]);
+  useEffect(() => {
+    if(state === STATE.IN_GAME) {
+      const interval = setInterval(() => {
+        gameController.reorderMoles();
+      }, 1000);
+      return () => clearInterval(interval);
+    }
+  }, [state]);
 
-  // useEffect(() => {
-  //   if(state === STATE.IN_GAME) {
-  //     const randomTimer = randomIntFromInterval(400, 1200);
-  //     const interval = setInterval(() => {
-  //       gameController.showRandomMole();
-  //     }, randomTimer);
-  //     return () => clearInterval(interval);
-  //   }
-  // }, [state]);
+  useEffect(() => {
+    if(state === STATE.IN_GAME) {
+      const randomTimer = randomIntFromInterval(400, 1200);
+      const interval = setInterval(() => {
+        gameController.showRandomMole();
+      }, randomTimer);
+      return () => clearInterval(interval);
+    }
+  }, [state]);
 
   return (
     <div className="App">

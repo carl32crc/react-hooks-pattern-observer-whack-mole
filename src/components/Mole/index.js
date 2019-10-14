@@ -9,19 +9,19 @@ const useForceRerender = () => React.useReducer(x => x + 1, 0)[1]
 export const Mole = ({mole}) => {
   const forceRenderer = useForceRerender();
 
-  // useEffect(() => {
-  //   if(mole.isVisible) {
-  //     const randomTime = randomIntFromInterval(mole.peepOutMin, mole.peepOutMax);
-  //     const interval = setInterval(() => {
-  //       gameController.hideMole(mole);
-  //     }, randomTime);
-  //     return () => clearInterval(interval);
-  //   } 
-  // }, [mole])
+  useEffect(() => {
+    if(mole.isVisible) {
+      const randomTime = randomIntFromInterval(mole.peepOutMin, mole.peepOutMax);
+      const interval = setInterval(() => {
+        gameController.hideMole(mole);
+      }, randomTime);
+      return () => clearInterval(interval);
+    } 
+  }, [mole])
   
   return(
   mole.live > 0 && 
-  //mole.isVisible &&
+  mole.isVisible &&
     <Logo 
       onClick={() => {
         scoreController.updateScore(mole);

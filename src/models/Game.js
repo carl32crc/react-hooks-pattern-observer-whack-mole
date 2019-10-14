@@ -40,16 +40,10 @@ export class Game {
 
   hideMole(moleToHide) {
     moleToHide.hide();
-    // this.board = this.board.map(({ id, mole }) => {
-    //   return { id, mole: { ...mole.id === moleToHide.id ? {...mole, isVisible: false } : mole  } }
-    // })
   }
 
   kickedMole(moleKicked) {
     moleKicked.decrementLive();
-    // this.board = this.board.map(({ id, mole }) => {
-    //   return { id, mole: { ...mole.id === moleKicked.id ? {...mole, live: mole.live - 1 } : mole  } }
-    // })
   }
 
   continueInGame(scoreController) {
