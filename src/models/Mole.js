@@ -20,7 +20,9 @@ export class Mole {
   }
 
   decrementLive() {
-    this.live--;
+    if(this.live > 0) {
+      this.live--;
+    }
   }
 }
 
