@@ -1,0 +1,601 @@
+export const galleryMockup = [{
+  "id": "com.imgur.Konklux",
+  "description": "Music",
+  "title": "n/a",
+  "price": "£1.66",
+  "image": "http://dummyimage.com/116x181.png/cc0000/ffffff"
+}, {
+  "id": "hk.com.google.Stim",
+  "description": "Garden",
+  "title": "Health Care",
+  "price": "£2.37",
+  "image": "http://dummyimage.com/112x235.png/ff4444/ffffff"
+}, {
+  "id": "com.goodreads.Konklux",
+  "description": "Games",
+  "title": "Consumer Services",
+  "price": "£5.23",
+  "image": "http://dummyimage.com/177x148.bmp/dddddd/000000"
+}, {
+  "id": "gov.ftc.Latlux",
+  "description": "Jewelery",
+  "title": "Consumer Services",
+  "price": "£4.52",
+  "image": "http://dummyimage.com/238x208.bmp/5fa2dd/ffffff"
+}, {
+  "id": "es.google.Ronstring",
+  "description": "Shoes",
+  "title": "Basic Industries",
+  "price": "£4.21",
+  "image": "http://dummyimage.com/132x174.bmp/cc0000/ffffff"
+}, {
+  "id": "com.hexun.Zoolab",
+  "description": "Movies",
+  "title": "Energy",
+  "price": "£8.16",
+  "image": "http://dummyimage.com/246x186.bmp/5fa2dd/ffffff"
+}, {
+  "id": "uk.co.webeden.Redhold",
+  "description": "Games",
+  "title": "Health Care",
+  "price": "£8.34",
+  "image": "http://dummyimage.com/180x171.jpg/dddddd/000000"
+}, {
+  "id": "edu.umich.Holdlamis",
+  "description": "Jewelery",
+  "title": "Consumer Services",
+  "price": "£7.90",
+  "image": "http://dummyimage.com/209x125.jpg/cc0000/ffffff"
+}, {
+  "id": "com.phpbb.Stronghold",
+  "description": "Kids",
+  "title": "n/a",
+  "price": "£6.39",
+  "image": "http://dummyimage.com/117x242.png/cc0000/ffffff"
+}, {
+  "id": "org.bbb.Domainer",
+  "description": "Baby",
+  "title": "Finance",
+  "price": "£1.72",
+  "image": "http://dummyimage.com/185x213.png/cc0000/ffffff"
+}, {
+  "id": "co.t.Konklux",
+  "description": "Books",
+  "title": "Health Care",
+  "price": "£8.66",
+  "image": "http://dummyimage.com/149x111.png/dddddd/000000"
+}, {
+  "id": "com.taobao.Zaam-Dox",
+  "description": "Industrial",
+  "title": "Technology",
+  "price": "£3.67",
+  "image": "http://dummyimage.com/234x167.png/ff4444/ffffff"
+}, {
+  "id": "com.hubpages.Duobam",
+  "description": "Baby",
+  "title": "Technology",
+  "price": "£4.22",
+  "image": "http://dummyimage.com/107x115.jpg/cc0000/ffffff"
+}, {
+  "id": "edu.umn.Toughjoyfax",
+  "description": "Health",
+  "title": "Technology",
+  "price": "£2.51",
+  "image": "http://dummyimage.com/115x210.jpg/cc0000/ffffff"
+}, {
+  "id": "edu.upenn.Hatity",
+  "description": "Garden",
+  "title": "Capital Goods",
+  "price": "£0.89",
+  "image": "http://dummyimage.com/238x101.jpg/cc0000/ffffff"
+}, {
+  "id": "com.bandcamp.Tampflex",
+  "description": "Health",
+  "title": "Consumer Services",
+  "price": "£0.56",
+  "image": "http://dummyimage.com/199x139.png/5fa2dd/ffffff"
+}, {
+  "id": "com.meetup.Sonsing",
+  "description": "Baby",
+  "title": "Finance",
+  "price": "£9.08",
+  "image": "http://dummyimage.com/215x237.jpg/cc0000/ffffff"
+}, {
+  "id": "com.statcounter.Pannier",
+  "description": "Games",
+  "title": "Capital Goods",
+  "price": "£0.70",
+  "image": "http://dummyimage.com/204x148.jpg/cc0000/ffffff"
+}, {
+  "id": "com.weibo.Sonsing",
+  "description": "Clothing",
+  "title": "Health Care",
+  "price": "£3.74",
+  "image": "http://dummyimage.com/149x222.png/dddddd/000000"
+}, {
+  "id": "com.list-manage.Prodder",
+  "description": "Music",
+  "title": "Consumer Services",
+  "price": "£5.19",
+  "image": "http://dummyimage.com/149x132.png/cc0000/ffffff"
+}, {
+  "id": "com.flickr.It",
+  "description": "Jewelery",
+  "title": "Technology",
+  "price": "£5.71",
+  "image": "http://dummyimage.com/172x145.jpg/dddddd/000000"
+}, {
+  "id": "au.gov.nsw.Bitwolf",
+  "description": "Tools",
+  "title": "Transportation",
+  "price": "£0.93",
+  "image": "http://dummyimage.com/208x219.bmp/dddddd/000000"
+}, {
+  "id": "com.sfgate.Tresom",
+  "description": "Tools",
+  "title": "Consumer Services",
+  "price": "£6.24",
+  "image": "http://dummyimage.com/203x163.png/cc0000/ffffff"
+}, {
+  "id": "au.gov.privacy.Lotlux",
+  "description": "Jewelery",
+  "title": "Capital Goods",
+  "price": "£1.66",
+  "image": "http://dummyimage.com/220x156.jpg/5fa2dd/ffffff"
+}, {
+  "id": "com.cnn.Treeflex",
+  "description": "Shoes",
+  "title": "Basic Industries",
+  "price": "£5.66",
+  "image": "http://dummyimage.com/168x147.jpg/ff4444/ffffff"
+}, {
+  "id": "com.nationalgeographic.Lotstring",
+  "description": "Jewelery",
+  "title": "n/a",
+  "price": "£2.58",
+  "image": "http://dummyimage.com/209x228.bmp/ff4444/ffffff"
+}, {
+  "id": "edu.ucla.Ronstring",
+  "description": "Games",
+  "title": "n/a",
+  "price": "£2.57",
+  "image": "http://dummyimage.com/141x213.png/cc0000/ffffff"
+}, {
+  "id": "com.blinklist.Opela",
+  "description": "Garden",
+  "title": "n/a",
+  "price": "£6.90",
+  "image": "http://dummyimage.com/160x163.bmp/5fa2dd/ffffff"
+}, {
+  "id": "edu.umich.Alphazap",
+  "description": "Baby",
+  "title": "Capital Goods",
+  "price": "£5.10",
+  "image": "http://dummyimage.com/106x114.png/5fa2dd/ffffff"
+}, {
+  "id": "com.taobao.Andalax",
+  "description": "Music",
+  "title": "Consumer Services",
+  "price": "£2.76",
+  "image": "http://dummyimage.com/112x244.png/5fa2dd/ffffff"
+}, {
+  "id": "com.imdb.Temp",
+  "description": "Baby",
+  "title": "Finance",
+  "price": "£7.45",
+  "image": "http://dummyimage.com/195x120.jpg/5fa2dd/ffffff"
+}, {
+  "id": "edu.yale.Pannier",
+  "description": "Baby",
+  "title": "Health Care",
+  "price": "£9.32",
+  "image": "http://dummyimage.com/191x127.png/ff4444/ffffff"
+}, {
+  "id": "com.facebook.Voltsillam",
+  "description": "Games",
+  "title": "n/a",
+  "price": "£9.22",
+  "image": "http://dummyimage.com/162x114.jpg/ff4444/ffffff"
+}, {
+  "id": "gov.ftc.Cookley",
+  "description": "Computers",
+  "title": "n/a",
+  "price": "£7.69",
+  "image": "http://dummyimage.com/235x170.bmp/dddddd/000000"
+}, {
+  "id": "com.oakley.Holdlamis",
+  "description": "Baby",
+  "title": "Energy",
+  "price": "£1.39",
+  "image": "http://dummyimage.com/186x112.jpg/dddddd/000000"
+}, {
+  "id": "uk.co.telegraph.Matsoft",
+  "description": "Electronics",
+  "title": "Finance",
+  "price": "£2.66",
+  "image": "http://dummyimage.com/109x121.jpg/ff4444/ffffff"
+}, {
+  "id": "es.google.Stim",
+  "description": "Outdoors",
+  "title": "n/a",
+  "price": "£8.39",
+  "image": "http://dummyimage.com/206x246.bmp/5fa2dd/ffffff"
+}, {
+  "id": "com.washingtonpost.Domainer",
+  "description": "Automotive",
+  "title": "n/a",
+  "price": "£6.62",
+  "image": "http://dummyimage.com/238x222.png/5fa2dd/ffffff"
+}, {
+  "id": "ru.google.Voyatouch",
+  "description": "Health",
+  "title": "n/a",
+  "price": "£9.67",
+  "image": "http://dummyimage.com/167x126.jpg/dddddd/000000"
+}, {
+  "id": "jp.geocities.Quo Lux",
+  "description": "Garden",
+  "title": "Health Care",
+  "price": "£3.61",
+  "image": "http://dummyimage.com/183x112.jpg/dddddd/000000"
+}, {
+  "id": "com.apple.Latlux",
+  "description": "Games",
+  "title": "Technology",
+  "price": "£4.59",
+  "image": "http://dummyimage.com/214x105.bmp/ff4444/ffffff"
+}, {
+  "id": "uk.co.google.Pannier",
+  "description": "Grocery",
+  "title": "n/a",
+  "price": "£5.01",
+  "image": "http://dummyimage.com/177x218.png/5fa2dd/ffffff"
+}, {
+  "id": "com.cafepress.Matsoft",
+  "description": "Baby",
+  "title": "Consumer Durables",
+  "price": "£1.26",
+  "image": "http://dummyimage.com/179x113.jpg/cc0000/ffffff"
+}, {
+  "id": "edu.si.Greenlam",
+  "description": "Tools",
+  "title": "Technology",
+  "price": "£7.48",
+  "image": "http://dummyimage.com/230x225.png/dddddd/000000"
+}, {
+  "id": "mil.army.Tampflex",
+  "description": "Movies",
+  "title": "n/a",
+  "price": "£6.72",
+  "image": "http://dummyimage.com/191x217.png/cc0000/ffffff"
+}, {
+  "id": "com.nifty.Y-Solowarm",
+  "description": "Garden",
+  "title": "Basic Industries",
+  "price": "£1.03",
+  "image": "http://dummyimage.com/130x122.png/cc0000/ffffff"
+}, {
+  "id": "cn.com.china.Sonair",
+  "description": "Movies",
+  "title": "Technology",
+  "price": "£0.96",
+  "image": "http://dummyimage.com/133x187.bmp/dddddd/000000"
+}, {
+  "id": "com.ucoz.Vagram",
+  "description": "Grocery",
+  "title": "Consumer Services",
+  "price": "£5.14",
+  "image": "http://dummyimage.com/225x159.jpg/cc0000/ffffff"
+}, {
+  "id": "com.economist.Andalax",
+  "description": "Games",
+  "title": "Consumer Services",
+  "price": "£5.70",
+  "image": "http://dummyimage.com/204x103.png/5fa2dd/ffffff"
+}, {
+  "id": "com.comsenz.Ventosanzap",
+  "description": "Home",
+  "title": "Energy",
+  "price": "£4.85",
+  "image": "http://dummyimage.com/145x118.bmp/dddddd/000000"
+}, {
+  "id": "edu.cornell.Zathin",
+  "description": "Music",
+  "title": "Consumer Services",
+  "price": "£0.12",
+  "image": "http://dummyimage.com/233x200.png/cc0000/ffffff"
+}, {
+  "id": "com.slate.Overhold",
+  "description": "Toys",
+  "title": "n/a",
+  "price": "£7.23",
+  "image": "http://dummyimage.com/134x250.bmp/dddddd/000000"
+}, {
+  "id": "com.stumbleupon.Stringtough",
+  "description": "Games",
+  "title": "Consumer Services",
+  "price": "£5.12",
+  "image": "http://dummyimage.com/198x139.png/cc0000/ffffff"
+}, {
+  "id": "jp.exblog.Cookley",
+  "description": "Health",
+  "title": "Health Care",
+  "price": "£5.02",
+  "image": "http://dummyimage.com/219x223.bmp/ff4444/ffffff"
+}, {
+  "id": "com.vinaora.Prodder",
+  "description": "Toys",
+  "title": "Basic Industries",
+  "price": "£0.25",
+  "image": "http://dummyimage.com/226x229.bmp/ff4444/ffffff"
+}, {
+  "id": "jp.ne.dion.Matsoft",
+  "description": "Grocery",
+  "title": "Health Care",
+  "price": "£0.70",
+  "image": "http://dummyimage.com/121x172.jpg/dddddd/000000"
+}, {
+  "id": "org.un.Solarbreeze",
+  "description": "Clothing",
+  "title": "n/a",
+  "price": "£3.89",
+  "image": "http://dummyimage.com/195x207.jpg/dddddd/000000"
+}, {
+  "id": "net.clickbank.Y-find",
+  "description": "Tools",
+  "title": "Health Care",
+  "price": "£1.33",
+  "image": "http://dummyimage.com/245x175.bmp/ff4444/ffffff"
+}, {
+  "id": "com.mediafire.Y-Solowarm",
+  "description": "Industrial",
+  "title": "Health Care",
+  "price": "£0.75",
+  "image": "http://dummyimage.com/157x119.bmp/5fa2dd/ffffff"
+}, {
+  "id": "com.hubpages.Cookley",
+  "description": "Industrial",
+  "title": "n/a",
+  "price": "£2.83",
+  "image": "http://dummyimage.com/114x204.bmp/5fa2dd/ffffff"
+}, {
+  "id": "com.twitter.Alphazap",
+  "description": "Garden",
+  "title": "Health Care",
+  "price": "£4.00",
+  "image": "http://dummyimage.com/198x232.jpg/dddddd/000000"
+}, {
+  "id": "net.comcast.Tin",
+  "description": "Electronics",
+  "title": "Consumer Non-Durables",
+  "price": "£8.22",
+  "image": "http://dummyimage.com/125x182.bmp/dddddd/000000"
+}, {
+  "id": "ch.admin.Cookley",
+  "description": "Garden",
+  "title": "Consumer Services",
+  "price": "£6.82",
+  "image": "http://dummyimage.com/188x110.bmp/dddddd/000000"
+}, {
+  "id": "gov.house.Holdlamis",
+  "description": "Beauty",
+  "title": "Consumer Services",
+  "price": "£0.80",
+  "image": "http://dummyimage.com/221x132.bmp/5fa2dd/ffffff"
+}, {
+  "id": "com.marketwatch.Bigtax",
+  "description": "Health",
+  "title": "n/a",
+  "price": "£1.01",
+  "image": "http://dummyimage.com/172x196.jpg/ff4444/ffffff"
+}, {
+  "id": "com.taobao.Stronghold",
+  "description": "Clothing",
+  "title": "n/a",
+  "price": "£3.67",
+  "image": "http://dummyimage.com/176x203.bmp/5fa2dd/ffffff"
+}, {
+  "id": "com.canalblog.Home Ing",
+  "description": "Industrial",
+  "title": "Public Utilities",
+  "price": "£8.43",
+  "image": "http://dummyimage.com/126x210.jpg/dddddd/000000"
+}, {
+  "id": "gov.state.Overhold",
+  "description": "Sports",
+  "title": "Basic Industries",
+  "price": "£3.23",
+  "image": "http://dummyimage.com/245x232.bmp/cc0000/ffffff"
+}, {
+  "id": "com.cnn.Bitwolf",
+  "description": "Games",
+  "title": "Transportation",
+  "price": "£5.93",
+  "image": "http://dummyimage.com/232x203.png/dddddd/000000"
+}, {
+  "id": "com.statcounter.Bitchip",
+  "description": "Grocery",
+  "title": "Consumer Services",
+  "price": "£3.35",
+  "image": "http://dummyimage.com/149x173.png/cc0000/ffffff"
+}, {
+  "id": "com.constantcontact.Transcof",
+  "description": "Home",
+  "title": "Consumer Services",
+  "price": "£4.89",
+  "image": "http://dummyimage.com/108x237.bmp/5fa2dd/ffffff"
+}, {
+  "id": "com.storify.Stronghold",
+  "description": "Books",
+  "title": "Miscellaneous",
+  "price": "£8.21",
+  "image": "http://dummyimage.com/193x118.jpg/cc0000/ffffff"
+}, {
+  "id": "pl.google.Kanlam",
+  "description": "Electronics",
+  "title": "Miscellaneous",
+  "price": "£5.20",
+  "image": "http://dummyimage.com/236x217.jpg/dddddd/000000"
+}, {
+  "id": "pl.home.Veribet",
+  "description": "Shoes",
+  "title": "Technology",
+  "price": "£3.13",
+  "image": "http://dummyimage.com/238x134.jpg/cc0000/ffffff"
+}, {
+  "id": "com.acquirethisname.Zaam-Dox",
+  "description": "Health",
+  "title": "Finance",
+  "price": "£5.48",
+  "image": "http://dummyimage.com/145x214.png/5fa2dd/ffffff"
+}, {
+  "id": "jp.co.amazon.Domainer",
+  "description": "Movies",
+  "title": "n/a",
+  "price": "£7.49",
+  "image": "http://dummyimage.com/225x116.jpg/5fa2dd/ffffff"
+}, {
+  "id": "com.vistaprint.Lotlux",
+  "description": "Health",
+  "title": "Technology",
+  "price": "£8.94",
+  "image": "http://dummyimage.com/211x201.jpg/cc0000/ffffff"
+}, {
+  "id": "com.latimes.Regrant",
+  "description": "Computers",
+  "title": "Basic Industries",
+  "price": "£8.91",
+  "image": "http://dummyimage.com/180x169.bmp/ff4444/ffffff"
+}, {
+  "id": "gov.fda.Span",
+  "description": "Jewelery",
+  "title": "Health Care",
+  "price": "£1.60",
+  "image": "http://dummyimage.com/234x232.bmp/5fa2dd/ffffff"
+}, {
+  "id": "com.photobucket.Greenlam",
+  "description": "Clothing",
+  "title": "n/a",
+  "price": "£2.85",
+  "image": "http://dummyimage.com/137x218.bmp/ff4444/ffffff"
+}, {
+  "id": "com.discovery.Redhold",
+  "description": "Beauty",
+  "title": "Finance",
+  "price": "£2.41",
+  "image": "http://dummyimage.com/105x130.jpg/cc0000/ffffff"
+}, {
+  "id": "com.pcworld.Veribet",
+  "description": "Beauty",
+  "title": "Technology",
+  "price": "£6.51",
+  "image": "http://dummyimage.com/191x242.bmp/dddddd/000000"
+}, {
+  "id": "edu.mit.Konklux",
+  "description": "Jewelery",
+  "title": "Public Utilities",
+  "price": "£3.62",
+  "image": "http://dummyimage.com/107x111.png/cc0000/ffffff"
+}, {
+  "id": "com.usnews.Sub-Ex",
+  "description": "Sports",
+  "title": "Transportation",
+  "price": "£9.57",
+  "image": "http://dummyimage.com/183x170.jpg/5fa2dd/ffffff"
+}, {
+  "id": "com.webnode.Ronstring",
+  "description": "Health",
+  "title": "Consumer Services",
+  "price": "£8.36",
+  "image": "http://dummyimage.com/108x232.jpg/cc0000/ffffff"
+}, {
+  "id": "gov.noaa.Toughjoyfax",
+  "description": "Sports",
+  "title": "n/a",
+  "price": "£8.53",
+  "image": "http://dummyimage.com/178x198.png/ff4444/ffffff"
+}, {
+  "id": "edu.ucla.Tempsoft",
+  "description": "Books",
+  "title": "Capital Goods",
+  "price": "£8.02",
+  "image": "http://dummyimage.com/102x178.jpg/dddddd/000000"
+}, {
+  "id": "jp.ameblo.Stim",
+  "description": "Jewelery",
+  "title": "Transportation",
+  "price": "£8.11",
+  "image": "http://dummyimage.com/240x222.png/cc0000/ffffff"
+}, {
+  "id": "org.craigslist.Asoka",
+  "description": "Industrial",
+  "title": "Finance",
+  "price": "£1.27",
+  "image": "http://dummyimage.com/133x213.jpg/cc0000/ffffff"
+}, {
+  "id": "com.icq.Bitwolf",
+  "description": "Beauty",
+  "title": "Consumer Services",
+  "price": "£9.16",
+  "image": "http://dummyimage.com/183x127.png/cc0000/ffffff"
+}, {
+  "id": "uk.co.google.Cardify",
+  "description": "Home",
+  "title": "n/a",
+  "price": "£4.78",
+  "image": "http://dummyimage.com/122x172.bmp/ff4444/ffffff"
+}, {
+  "id": "cn.gov.miibeian.Y-find",
+  "description": "Games",
+  "title": "Capital Goods",
+  "price": "£9.30",
+  "image": "http://dummyimage.com/156x120.bmp/cc0000/ffffff"
+}, {
+  "id": "jp.geocities.Bytecard",
+  "description": "Computers",
+  "title": "Energy",
+  "price": "£3.02",
+  "image": "http://dummyimage.com/106x217.png/5fa2dd/ffffff"
+}, {
+  "id": "br.com.google.Cookley",
+  "description": "Automotive",
+  "title": "Public Utilities",
+  "price": "£1.99",
+  "image": "http://dummyimage.com/105x114.png/dddddd/000000"
+}, {
+  "id": "org.mozilla.Redhold",
+  "description": "Garden",
+  "title": "Finance",
+  "price": "£6.74",
+  "image": "http://dummyimage.com/222x153.png/cc0000/ffffff"
+}, {
+  "id": "org.unesco.Holdlamis",
+  "description": "Books",
+  "title": "Finance",
+  "price": "£2.62",
+  "image": "http://dummyimage.com/198x173.jpg/dddddd/000000"
+}, {
+  "id": "io.pen.Job",
+  "description": "Games",
+  "title": "Finance",
+  "price": "£9.94",
+  "image": "http://dummyimage.com/164x164.bmp/ff4444/ffffff"
+}, {
+  "id": "com.cdbaby.Otcom",
+  "description": "Industrial",
+  "title": "Health Care",
+  "price": "£5.41",
+  "image": "http://dummyimage.com/245x116.bmp/dddddd/000000"
+}, {
+  "id": "io.soup.Home Ing",
+  "description": "Beauty",
+  "title": "Public Utilities",
+  "price": "£8.77",
+  "image": "http://dummyimage.com/217x202.bmp/cc0000/ffffff"
+}, {
+  "id": "com.webs.Temp",
+  "description": "Books",
+  "title": "Consumer Services",
+  "price": "£7.39",
+  "image": "http://dummyimage.com/107x140.png/dddddd/000000"
+}]
