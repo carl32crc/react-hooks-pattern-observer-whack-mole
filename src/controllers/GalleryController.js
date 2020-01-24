@@ -13,12 +13,6 @@ class GalleryController {
         this.gallery.setProducts(products);
         this.subject.publish(this);
     }
-
-    onChangeTitle(event, product) {
-        product.onChangeTitle(event.target.value);
-        this.product = product;
-        this.subject.publish(this);
-    }
 }
 
 export const galleryController = new GalleryController(new Gallery(), new Subject(), new Gallery());

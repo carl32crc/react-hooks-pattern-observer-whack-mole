@@ -1,7 +1,7 @@
-import React, { useEffect, useState, useMemo } from 'react';
-import { galleryController } from './../../controllers/GalleryController';
+import React, { useEffect } from 'react';
+import { productController } from './../../controllers/ProductController';
 
-const { subject } = galleryController;
+const { subject } = productController;
 
 const useForceRerender = () => React.useReducer(x => x + 1, 0)[1]
 

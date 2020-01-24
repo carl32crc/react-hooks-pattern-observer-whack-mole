@@ -1,5 +1,5 @@
 import React from 'react';
-import { galleryController } from './../../controllers/GalleryController';
+import { productController } from './../../controllers/ProductController';
 
 const useForceRerender = () => React.useReducer(x => x + 1, 0)[1]
 
@@ -8,7 +8,8 @@ export const Input = ({product}) => {
     return <input 
       value={product.title} 
       onChange={(event) => {
-        galleryController.onChangeTitle(event, product);
+        productController.onChangeTitle(event, product);
+        productController.setProduct(product);
         forceRenderer();
     }}
     />

@@ -10,6 +10,7 @@ export class Product {
         this.image = image;
         this.onChangeTitle = this.onChangeTitle;
         this.getProduct = this.getProduct;
+        this.clearProduct = this.clearProduct;
     }
 
     onChangeTitle(title) {
@@ -34,5 +35,13 @@ export class Product {
         this.title = title;
         this.price = price;
         this.image = image;
+    }
+
+    clearProduct() {
+        this.id = '';
+        this.description = '';
+        this.title = '';
+        this.price = '';
+        this.image = '';
     }
 }

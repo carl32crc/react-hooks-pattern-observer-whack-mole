@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import { Square } from './components/Square';
 import { galleryController } from './controllers/GalleryController';
+import { productController } from './controllers/ProductController';
 
 import { galleryMockup } from './json/mockup';
 
@@ -33,7 +34,10 @@ function Gallery() {
       <Modal 
         open={isOpen}
         title={product.title}
-        closeModal={() => setIsOpen(false)}
+        closeModal={() => {
+          productController.clearProduct();
+          setIsOpen(false)
+        }}
       >
         <Input product={product} />
       </Modal>
