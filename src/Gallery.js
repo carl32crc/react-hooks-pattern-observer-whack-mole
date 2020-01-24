@@ -5,12 +5,17 @@ import { galleryController } from './controllers/GalleryController';
 
 import { galleryMockup } from './json/mockup';
 
+import { Modal } from './components/Modal';
+import { Input } from './components/Input';
+
 import './Gallery.css'
 
 const { subject } = galleryController;
 
 function Gallery() {
   const [gallery, setGallery] = useState(galleryController.gallery.products);
+  const [product, setProduct] = useState({});
+  const [isOpen, setIsOpen] = useState(false);
 
   function onGalleryUpdate(newState) {
     const { products } = newState.gallery;
@@ -24,9 +29,25 @@ function Gallery() {
   },[])
 
   return (
-    <div className="Gallery">
-      {gallery.length > 0 && gallery.map((product, index) => <Square key={product.id} product={product} index={index} />)}
-    </div>
+    <React.Fragment>
+      <Modal 
+        open={isOpen}
+        title={product.title}
+        closeModal={() => setIsOpen(false)}
+      >
+        <Input product={product} />
+      </Modal>
+      <div className="Gallery">
+        {gallery.length > 0 && gallery.map(product => 
+          <Square 
+            key={product.id} 
+            product={product} 
+            setIsOpen={setIsOpen} 
+            setProduct={setProduct} 
+          />
+        )}
+      </div>
+    </React.Fragment>
   );
 }
 
