@@ -8,16 +8,6 @@ class ProductController {
         this.product = Product;
     }
 
-    setProduct(product) {
-        this.product.setProduct(product);
-        this.subject.publish(this);
-    }
-
-    clearProduct() {
-        this.product.clearProduct();
-        this.subject.publish(this);
-    }
-
     onChangeTitle(event, product) {
         product.onChangeTitle(event.target.value);
         this.subject.publish(this);

@@ -15,15 +15,13 @@ export const Square = ({ product }) => {
         open={isOpen}
         title={product.title}
         closeModal={() => {
-          productController.clearProduct();
           setIsOpen(false)
         }}
       >
         <Input 
-          product={product}
+          value={product.title}
           onChange={(event) => {
             productController.onChangeTitle(event, product);
-            productController.setProduct(product);
             forceRenderer();
           }}
         />

@@ -37,11 +37,4 @@ export class Product {
         this.image = image;
     }
 
-    clearProduct() {
-        this.id = '';
-        this.description = '';
-        this.title = '';
-        this.price = '';
-        this.image = '';
-    }
 }
