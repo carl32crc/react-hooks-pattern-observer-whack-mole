@@ -2,12 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 import { Square } from './components/Square';
 import { galleryController } from './controllers/GalleryController';
-import { productController } from './controllers/ProductController';
 
 import { galleryMockup } from './json/mockup';
-
-import { Modal } from './components/Modal';
-import { Input } from './components/Input';
 
 import './Gallery.css'
 
@@ -15,8 +11,6 @@ const { subject } = galleryController;
 
 function Gallery() {
   const [gallery, setGallery] = useState(galleryController.gallery.products);
-  const [product, setProduct] = useState({});
-  const [isOpen, setIsOpen] = useState(false);
 
   function onGalleryUpdate(newState) {
     const { products } = newState.gallery;
@@ -26,28 +20,17 @@ function Gallery() {
   useEffect(() => {
     subject.attach(onGalleryUpdate);
     galleryController.setProducts(galleryMockup);
+    window.galleryController = galleryController;
     return () => subject.detach(onGalleryUpdate);
   },[])
 
   return (
     <React.Fragment>
-      <Modal 
-        open={isOpen}
-        title={product.title}
-        closeModal={() => {
-          productController.clearProduct();
-          setIsOpen(false)
-        }}
-      >
-        <Input product={product} />
-      </Modal>
       <div className="Gallery">
         {gallery.length > 0 && gallery.map(product => 
           <Square 
             key={product.id} 
-            product={product} 
-            setIsOpen={setIsOpen} 
-            setProduct={setProduct} 
+            product={product}
           />
         )}
       </div>

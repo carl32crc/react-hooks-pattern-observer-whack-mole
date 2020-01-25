@@ -1,33 +1,36 @@
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
+import { Modal } from './../Modal'
+import { Input } from './../Input'
 import { productController } from './../../controllers/ProductController';
-
-const { subject } = productController;
 
 const useForceRerender = () => React.useReducer(x => x + 1, 0)[1]
 
-export const Square = ({ product, setIsOpen, setProduct }) => {
-  
+export const Square = ({ product }) => {
   const forceRenderer = useForceRerender();
+  const [isOpen, setIsOpen] = useState(false);
   
-  const onProductUpdate = (newState) => {
-    if(newState.product.id === product.id) {
-      forceRenderer();
-    }   
-  }
-
-  useEffect(() => {
-    subject.attach(onProductUpdate);
-
-    return () => subject.detach(onProductUpdate);
-  },[])
-
-
   return (
     <React.Fragment>
+      <Modal 
+        open={isOpen}
+        title={product.title}
+        closeModal={() => {
+          productController.clearProduct();
+          setIsOpen(false)
+        }}
+      >
+        <Input 
+          product={product}
+          onChange={(event) => {
+            productController.onChangeTitle(event, product);
+            productController.setProduct(product);
+            forceRenderer();
+          }}
+        />
+      </Modal>
       <div 
         style={{width: '500px', height: '300px'}} 
         onClick={() => {
-          setProduct(product);
           setIsOpen(true);
         }}>
         
