@@ -10,21 +10,23 @@ export const Square = ({ product }) => {
   
   return (
     <React.Fragment>
-      <Modal 
-        open={isOpen}
-        title={product.title}
-        closeModal={() => {
-          setIsOpen(false)
-        }}
-      >
-        <Input 
-          value={product.title}
-          onChange={(event) => {
-            product.onChangeTitle(event.target.value);
-            forceRenderer();
+      {isOpen && 
+        <Modal 
+          open={isOpen}
+          title={product.title}
+          closeModal={() => {
+            setIsOpen(false)
           }}
-        />
-      </Modal>
+        >
+          <Input 
+            value={product.title}
+            onChange={(event) => {
+              product.onChangeTitle(event.target.value);
+              forceRenderer();
+            }}
+          />
+        </Modal>
+      }
       <div 
         style={{width: '500px', height: '300px'}} 
         onClick={() => {
