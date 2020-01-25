@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Modal } from './../Modal'
 import { Input } from './../Input'
-import { productController } from './../../controllers/ProductController';
 
 const useForceRerender = () => React.useReducer(x => x + 1, 0)[1]
 
@@ -21,7 +20,7 @@ export const Square = ({ product }) => {
         <Input 
           value={product.title}
           onChange={(event) => {
-            productController.onChangeTitle(event, product);
+            product.onChangeTitle(event.target.value);
             forceRenderer();
           }}
         />
