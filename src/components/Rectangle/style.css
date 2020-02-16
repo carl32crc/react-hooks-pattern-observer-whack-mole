@@ -1,0 +1,10 @@
+.rectangle {
+  width: 100px;
+  height: 200px;
+  background-color: #b7b8ba;
+  margin-right: 10px;
+}
+
+.rectangle:last-child {
+  margin-right: 0; 
+}

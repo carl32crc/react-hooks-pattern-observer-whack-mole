@@ -9,16 +9,11 @@ export class Product {
         this.price = price;
         this.image = image;
         this.onChangeTitle = this.onChangeTitle;
-        this.getProduct = this.getProduct;
-        this.clearProduct = this.clearProduct;
+        this.setProduct = this.setProduct;
     }
 
     onChangeTitle(title) {
         this.title = title;
-    }
-
-    getProduct() {
-        return this;
     }
 
     setProduct({ id, description, title, price, image }) {
