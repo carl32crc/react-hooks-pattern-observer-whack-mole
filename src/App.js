@@ -71,13 +71,17 @@ function App() {
           <button onClick={() => {
             gameController.reset();
             gameController.setGameState(STATE.IN_GAME);
-          }}>New Game</button>
+          }}>
+            New Game
+          </button>
 
           <button onClick={() => {
             gameController.reset();
             gameController.setGameState(STATE.START);
             }}
-          >Exit</button>
+          >
+            Exit
+          </button>
         </React.Fragment>
       }
     </div>
